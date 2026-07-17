@@ -230,28 +230,36 @@
     .timeline-content {
       font-size: 0.95rem;
       opacity: 0.85;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
     }
 
-    /* Maps Link Button Styling */
-    .maps-link {
+    /* Maps Button Styling */
+    .btn-maps {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      color: var(--accent-color);
+      gap: 0.5rem;
+      background-color: var(--accent-color);
+      color: #ffffff;
       text-decoration: none;
+      font-size: 0.85rem;
       font-weight: 600;
-      border: 1px solid var(--accent-color);
-      padding: 0.35rem 0.75rem;
-      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 6px rgba(211, 84, 0, 0.15);
       transition: all 0.2s ease;
-      background: transparent;
+      border: 1px solid transparent;
     }
 
-    .maps-link:hover {
-      background: var(--accent-color);
-      color: #ffffff;
+    .btn-maps:hover {
+      background-color: #b34700;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(211, 84, 0, 0.25);
+    }
+
+    .btn-maps svg {
+      fill: currentColor;
+      width: 16px;
+      height: 16px;
     }
 
     /* Footer */
@@ -334,7 +342,10 @@
         <div class="timeline-content">
           Si scaldano i motori sotto la rocca del Brunelleschi a Vicopisano. Ci si dirige verso il confine francese e il massiccio centrale, direzione Le Puy-en-Velay.
         </div>
-        <a href="https://www.google.com/maps/dir/Vicopisano,+Pisa,+Italy/Le+Puy-en-Velay,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Vicopisano,+Pisa,+Italy/Le+Puy-en-Velay,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 2 -->
@@ -350,7 +361,10 @@
         <div class="timeline-content">
           La spettacolare cappella abbarbicata su un ago vulcanico basaltico proprio nel centro della conca del Velay.
         </div>
-        <a href="https://www.google.com/maps/dir/Le+Puy-en-Velay,+France/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Le+Puy-en-Velay,+France/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 3 -->
@@ -366,7 +380,10 @@
         <div class="timeline-content">
           Sfilata di curve scavate nella roccia calcarea lungo il fiume Sioule. Un paradiso guidato, perfetto per iniziare a piegare seriamente.
         </div>
-        <a href="https://www.google.com/maps/dir/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France/Gorges+de+Chouvigny,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France/Gorges+de+Chouvigny,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 4 -->
@@ -382,7 +399,10 @@
         <div class="timeline-content">
           Salita guidata fino ai piedi del gigante addormentato della Catena dei Puys. Asfalto perfetto e panorama mozzafiato sui coni vulcanici.
         </div>
-        <a href="https://www.google.com/maps/dir/Gorges+de+Chouvigny,+France/Col+de+Ceyssat,+Ceyssat,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Gorges+de+Chouvigny,+France/Col+de+Ceyssat,+Ceyssat,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 5 -->
@@ -398,7 +418,10 @@
         <div class="timeline-content">
           Misto stretto nel silenzio dei boschi di abeti dell'alto massiccio. Una terra selvaggia, isolata e intatta.
         </div>
-        <a href="https://www.google.com/maps/dir/Col+de+Ceyssat,+Ceyssat,+France/Parc+naturel+régional+Livradois-Forez,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Col+de+Ceyssat,+Ceyssat,+France/Parc+naturel+régional+Livradois-Forez,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 6 -->
@@ -414,7 +437,10 @@
         <div class="timeline-content">
           Uno specchio d'acqua artificiale enorme sperduto sugli altopiani. Strade litoranee da guidare col gas costante e aria fresca.
         </div>
-        <a href="https://www.google.com/maps/dir/Parc+naturel+régional+Livradois-Forez,+France/Lac+de+Vassivière,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Parc+naturel+régional+Livradois-Forez,+France/Lac+de+Vassivière,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 7 -->
@@ -430,7 +456,10 @@
         <div class="timeline-content">
           Ingresso ufficiale nel Sud-Ovest. Figeac accoglie le moto con la sua pietra arenaria scura e le strade medievali intatte.
         </div>
-        <a href="https://www.google.com/maps/dir/Lac+de+Vassivière,+France/Maurs,+France/Figeac,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Lac+de+Vassivière,+France/Maurs,+France/Figeac,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 8 -->
@@ -446,7 +475,10 @@
         <div class="timeline-content">
           Sosta per scendere a 103 metri sotto terra in una delle cavità geologiche più incredibili d'Europa, navigando su un fiume sotterraneo.
         </div>
-        <a href="https://www.google.com/maps/dir/Figeac,+France/Gouffre+de+Padirac,+Padirac,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Figeac,+France/Gouffre+de+Padirac,+Padirac,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 9 -->
@@ -462,7 +494,10 @@
         <div class="timeline-content">
           Il borgo-gioiello arroccato sulla falesia a picco sul fiume Lot, seguito dalla maestosità medievale del ponte Valentré a Cahors.
         </div>
-        <a href="https://www.google.com/maps/dir/Gouffre+de+Padirac,+Padirac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Gouffre+de+Padirac,+Padirac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 10 -->
@@ -478,7 +513,10 @@
         <div class="timeline-content">
           Il cuore del Périgord: tra i palazzi color miele di Sarlat, il villaggio incastrato nella roccia di La Roque-Gageac lungo la Dordogna, e la preistoria di Les Eyzies.
         </div>
-        <a href="https://www.google.com/maps/dir/Cahors,+France/Sarlat-la-Canéda,+France/La+Roque-Gageac,+France/Les+Eyzies,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Cahors,+France/Sarlat-la-Canéda,+France/La+Roque-Gageac,+France/Les+Eyzies,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 11 -->
@@ -494,7 +532,10 @@
         <div class="timeline-content">
           Abbazia trogloditica lambita dalle acque pigre della Dronne. Un posto idilliaco per rinfrescarsi prima delle ultime tirate autostradali.
         </div>
-        <a href="https://www.google.com/maps/dir/Les+Eyzies,+France/Brantôme+en+Périgord,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Les+Eyzies,+France/Brantôme+en+Périgord,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 12 -->
@@ -510,7 +551,10 @@
         <div class="timeline-content">
           Metropoli elegante sul Garonne. Vino eccellente, cibo e il riflesso monumentale sul Miroir d'eau. Da qui si inverte la rotta per tornare verso est.
         </div>
-        <a href="https://www.google.com/maps/dir/Brantôme+en+Périgord,+France/Bordeaux,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Brantôme+en+Périgord,+France/Bordeaux,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 13 -->
@@ -526,7 +570,10 @@
         <div class="timeline-content">
           La mitica D290 corre alta sul bordo del canyon scavato dal fiume Ardèche. 30 chilometri di curve e belvedere indimenticabili.
         </div>
-        <a href="https://www.google.com/maps/dir/Bordeaux,+France/Gorges+de+l'Ardèche,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Bordeaux,+France/Gorges+de+l'Ardèche,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 14 -->
@@ -542,7 +589,10 @@
         <div class="timeline-content">
           Il "Gigante della Provenza". Salita epica tra foreste e un paesaggio sommitale lunare e calcareo sferzato dal maestrale.
         </div>
-        <a href="https://www.google.com/maps/dir/Gorges+de+l'Ardèche,+France/Mont+Ventoux,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Gorges+de+l'Ardèche,+France/Mont+Ventoux,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 15 -->
@@ -558,7 +608,10 @@
         <div class="timeline-content">
           La Route des Crêtes e le falesie verticali a strapiombo sulle acque turchesi del fiume Verdon. Probabilmente la strada più spettacolare d'Europa da fare in sella.
         </div>
-        <a href="https://www.google.com/maps/dir/Mont+Ventoux,+France/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Mont+Ventoux,+France/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
       <!-- Tappa 16 -->
@@ -574,7 +627,10 @@
         <div class="timeline-content">
           Il canyon di pelite rossa (Gorges de Daluis), roccia color sangue che contrasta con l'asfalto, prima di riprendere la via di casa verso la Toscana.
         </div>
-        <a href="https://www.google.com/maps/dir/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France/Gorges+de+Daluis,+Guillaumes,+France/Vicopisano,+Pisa,+Italy" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
+        <a href="https://www.google.com/maps/dir/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France/Gorges+de+Daluis,+Guillaumes,+France/Vicopisano,+Pisa,+Italy" target="_blank" class="btn-maps">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Apri Percorso
+        </a>
       </div>
 
     </div>
