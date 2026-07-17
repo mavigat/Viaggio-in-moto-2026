@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raid in Moto 2026 · Alvernia & Périgord</title>
+  <title>Raid in Moto 2026 · Alvernia, Périgord & Pirenei</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     :root {
       --bg-color: #fcfbf9;
       --text-color: #2b2927;
-      --accent-color: #d35400; /* Arancio terra bruciata per la moto */
+      --accent-color: #d35400;
       --secondary-color: #2c3e50;
       --border-color: #e6e3df;
       --card-bg: #ffffff;
@@ -34,7 +34,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Navigation */
     nav {
       position: sticky;
       top: 0;
@@ -66,23 +65,6 @@
       font-style: italic;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-    }
-
-    nav ul a {
-      opacity: 0.8;
-      transition: opacity 0.2s;
-    }
-
-    nav ul a:hover {
-      opacity: 1;
-      color: var(--accent-color);
-    }
-
-    /* Header */
     header {
       max-width: 1100px;
       margin: 4rem auto 2rem;
@@ -119,7 +101,6 @@
       opacity: 0.85;
     }
 
-    /* Stats Grid */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -155,7 +136,6 @@
       margin-top: 0.25rem;
     }
 
-    /* Itinerary Section */
     .itinerary {
       max-width: 800px;
       margin: 5rem auto;
@@ -169,7 +149,6 @@
       text-align: center;
     }
 
-    /* Timeline structure style */
     .timeline {
       position: relative;
       padding-left: 2rem;
@@ -233,7 +212,6 @@
       margin-bottom: 1.25rem;
     }
 
-    /* Maps Button Styling */
     .btn-maps {
       display: inline-flex;
       align-items: center;
@@ -262,7 +240,6 @@
       height: 16px;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid var(--border-color);
       padding: 3rem 2rem;
@@ -271,7 +248,6 @@
       opacity: 0.6;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.2rem;
@@ -279,15 +255,11 @@
       .stats-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      nav ul {
-        display: none;
-      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <div class="container">
       <a href="#" class="logo">Raid Moto '26</a>
@@ -297,348 +269,299 @@
     </div>
   </nav>
 
-  <!-- Header -->
   <header>
-    <p class="tagline">On the Road · Estate 2026</p>
-    <h1>Francia in Moto: <em>curve, canyon & borghi</em></h1>
-    <p class="description">Dalla Toscana ai vulcani dell'Alvernia, piegando tra le gole dell'Ardèche e del Verdon, fino alle ostriche di Bordeaux e i canyon del Périgord.</p>
+    <p class="tagline">On the Road · Agosto 2026</p>
+    <h1>Raid Trans-Pirenaico: <em>Francia & Spagna</em></h1>
+    <p class="description">Da Vicopisano all'Oceano Atlantico passando per il Verdon, l'Ardèche e il Périgord, per poi piegare a sud e cavalcare l'intera catena dei Pirenei fino a Barcellona.</p>
     
     <div class="stats-grid">
       <div class="stat-box">
-        <span>~2.800</span>
-        <span>Chilometri</span>
+        <span>2.921</span>
+        <span>Km totali</span>
       </div>
       <div class="stat-box">
-        <span>22</span>
-        <span>Tappe chiave</span>
+        <span>14</span>
+        <span>Giorni</span>
       </div>
       <div class="stat-box">
-        <span>Pass</span>
-        <span>Parchi e colli</span>
+        <span>2</span>
+        <span>Moto / Persone</span>
       </div>
       <div class="stat-box">
-        <span>BMW GS</span>
-        <span>La cavalcatura</span>
+        <span>Grimaldi</span>
+        <span>Rientro via nave</span>
       </div>
     </div>
   </header>
 
-  <!-- Itinerary Section -->
   <section class="itinerary" id="itinerario">
-    <h2 class="section-title">La Tabella di Marcia</h2>
+    <h2 class="section-title">La Nuova Tabella di Marcia</h2>
     
     <div class="timeline">
 
-      <!-- Tappa 1 -->
+      <!-- Giorno 1 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Partenza</div>
-          <div class="timeline-title">Vicopisano ➔ Le Puy-en-Velay</div>
+          <div class="timeline-step">10 Agosto</div>
+          <div class="timeline-title">Vicopisano ➔ Antibes</div>
           <div class="timeline-meta">
-            <span>🇮🇹 ➔ 🇫🇷</span>
-            <span>· Tappa di trasferimento</span>
+            <span>🇮🇹 ➔ 🇫🇷 Costa Azzurra</span>
+            <span>· 400 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Si scaldano i motori sotto la rocca del Brunelleschi a Vicopisano. Ci si dirige verso il confine francese e il massiccio centrale, direzione Le Puy-en-Velay.
+          Partenza ufficiale da Vicopisano. Tappa di trasferimento lungo la costa per raggiungere la Francia e fare base ad Antibes per la prima notte.
         </div>
-        <a href="https://maps.app.goo.gl/QLxsmqE3G6s5RTg9A" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Vicopisano,+Pisa,+Italy/Antibes,+France" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 2 -->
+      <!-- Giorno 2 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 2</div>
-          <div class="timeline-title">Le Puy-en-Velay ➔ Saint-Michel d'Aiguilhe</div>
+          <div class="timeline-step">11 Agosto</div>
+          <div class="timeline-title">Antibes ➔ Verdon ➔ Mont Ventoux ➔ Malaucène</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Alvernia</span>
-            <span>· Breve trasferimento urbano</span>
+            <span>🇫🇷 Alta Provenza</span>
+            <span>· 313 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          La spettacolare cappella abbarbicata su un ago vulcanico basaltico proprio nel centro della conca del Velay.
+          Giornata spettacolare tra le curve di Comps-sur-Artuby e Aiguines nel cuore del Verdon, seguita dalla scalata del mitico Mont Ventoux con discesa e pernottamento a Malaucène.
         </div>
-        <a href="https://www.google.com/maps/dir/Le+Puy-en-Velay,+France/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Antibes,+France/Comps-sur-Artuby,+France/Aiguines,+France/Mont+Ventoux,+France/Malaucène,+France" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 3 -->
+      <!-- Giorno 3 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 3</div>
-          <div class="timeline-title">Saint-Michel d'Aiguilhe ➔ Gorges de Chouvigny</div>
+          <div class="timeline-step">12 Agosto</div>
+          <div class="timeline-title">Malaucène ➔ Gorges de l'Ardèche ➔ Saint-Flour</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Gole e Curve</span>
-            <span>· Verso il fiume Sioule</span>
+            <span>🇫🇷 Ardèche & Alvernia</span>
+            <span>· 334 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Sfilata di curve scavate nella roccia calcarea lungo il fiume Sioule. Un paradiso guidato, perfetto per iniziare a piegare seriamente.
+          Si cavalcano le falesie e i canyon dell'Ardèche per poi piegare verso il Massiccio Centrale dell'Alvernia, fermando le moto a Saint-Flour.
         </div>
-        <a href="https://www.google.com/maps/dir/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France/Gorges+de+Chouvigny,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Malaucène,+France/Gorges+de+l'Ardèche,+France/Saint-Flour,+France" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 4 -->
+      <!-- Giorno 4 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 4</div>
-          <div class="timeline-title">Gorges de Chouvigny ➔ Colle di Ceyssat (Alvernia)</div>
+          <div class="timeline-step">13 Agosto</div>
+          <div class="timeline-title">Saint-Flour ➔ Borghi del Périgord ➔ Brantôme</div>
           <div class="timeline-meta">
-            <span>🇫🇷 1.078 m s.l.m.</span>
-            <span>· Verso il Puy de Dôme</span>
+            <span>🇫🇷 Lot & Périgord</span>
+            <span>· 356 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Salita guidata fino ai piedi del gigante addormentato della Catena dei Puys. Asfalto perfetto e panorama mozzafiato sui coni vulcanici.
+          Tappa ricca di tappe intermedie e borghi mozzafiato: Maurs, Figeac, lo splendido nido d'aquila di Saint-Cirq-Lapopie, Cahors e la falesia di La Roque-Gageac, fino alla "Venezia del Périgord", Brantôme.
         </div>
-        <a href="https://www.google.com/maps/dir/Gorges+de+Chouvigny,+France/Col+de+Ceyssat,+Ceyssat,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Saint-Flour,+France/Maurs,+France/Figeac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France/La+Roque-Gageac,+France/Brantôme,+France" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 5 -->
+      <!-- Giorno 5 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 5</div>
-          <div class="timeline-title">Colle di Ceyssat ➔ P.N.R. Livradois-Forez</div>
+          <div class="timeline-step">14 Agosto</div>
+          <div class="timeline-title">Brantôme ➔ Bordeaux ➔ Cap Ferret</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Foreste & Altopiani</span>
-            <span>· Misto guidato</span>
+            <span>🇫🇷 Atlantico</span>
+            <span>· 218 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Misto stretto nel silenzio dei boschi di abeti dell'alto massiccio. Una terra selvaggia, isolata e intatta.
+          Discesa verso l'Oceano Atlantico passando per la splendida Bordeaux, puntando i fari direttamente sulla penisola di Cap Ferret per la notte di fronte al bacino d'Arcachon.
         </div>
-        <a href="https://www.google.com/maps/dir/Col+de+Ceyssat,+Ceyssat,+France/Parc+naturel+régional+Livradois-Forez,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Brantôme,+France/Bordeaux,+France/Cap+Ferret,+Lège-Cap-Ferret,+France" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 6 -->
+      <!-- Giorno 6 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 6</div>
-          <div class="timeline-title">P.N.R. Livradois-Forez ➔ Lago di Vassivière</div>
+          <div class="timeline-step">15 Agosto</div>
+          <div class="timeline-title">Cap Ferret ➔ San Sebastián</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Limosino</span>
-            <span>· Strade litoranee</span>
+            <span>🇫🇷 ➔ 🇪🇸 Paesi Baschi</span>
+            <span>· 260 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Uno specchio d'acqua artificiale enorme sperduto sugli altopiani. Strade litoranee da guidare col gas costante e aria fresca.
+          Si scende verso sud costeggiando le grandi pinete delle Landes per superare il confine spagnolo ed entrare nei Paesi Baschi. Notte a San Sebastián (Donostia).
         </div>
-        <a href="https://www.google.com/maps/dir/Parc+naturel+régional+Livradois-Forez,+France/Lac+de+Vassivière,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Cap+Ferret,+Lège-Cap-Ferret,+France/San+Sebastián,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 7 -->
+      <!-- Giorno 7 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 7</div>
-          <div class="timeline-title">Lago di Vassivière ➔ Maurs ➔ Figeac</div>
+          <div class="timeline-step">16 Agosto</div>
+          <div class="timeline-title">San Sebastián ➔ Pamplona</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Cantal & Lot</span>
-            <span>· Ingresso nel Sud-Ovest</span>
+            <span>🇪🇸 Navarra</span>
+            <span>· 160 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Ingresso ufficiale nel Sud-Ovest. Figeac accoglie le moto con la sua pietra arenaria scura e le strade medievali intatte.
+          Inizia l'avvicinamento e la scalata ai Pirenei. Tappa breve ma guidata attraverso le valli basche fino alle storiche mura di Pamplona.
         </div>
-        <a href="https://www.google.com/maps/dir/Lac+de+Vassivière,+France/Maurs,+France/Figeac,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/San+Sebastián,+Spain/Pamplona,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 8 -->
+      <!-- Giorno 8 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 8</div>
-          <div class="timeline-title">Figeac ➔ Gouffre de Padirac</div>
+          <div class="timeline-step">17 Agosto</div>
+          <div class="timeline-title">Pamplona ➔ Jaca</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Lot</span>
-            <span>· Abissi</span>
+            <span>🇪🇸 Aragona</span>
+            <span>· 180 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Sosta per scendere a 103 metri sotto terra in una delle cavità geologiche più incredibili d'Europa, navigando su un fiume sotterraneo.
+          Inserimento nel cuore dell'Aragona. Strade perfette, panorami montani aspri e selvaggi che portano alla cittadella fortificata di Jaca.
         </div>
-        <a href="https://www.google.com/maps/dir/Figeac,+France/Gouffre+de+Padirac,+Padirac,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Pamplona,+Spain/Jaca,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 9 -->
+      <!-- Giorno 9 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 9</div>
-          <div class="timeline-title">Padirac ➔ Saint-Cirq-Lapopie ➔ Cahors</div>
+          <div class="timeline-step">18 Agosto</div>
+          <div class="timeline-title">Jaca ➔ Aínsa</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Valle del Lot</span>
-            <span>· I borghi delle falesie</span>
+            <span>🇪🇸 Pirenei Aragonesi</span>
+            <span>· 150 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Il borgo-gioiello arroccato sulla falesia a picco sul fiume Lot, seguito dalla maestosità medievale del ponte Valentré a Cahors.
+          Pieghe memorabili costeggiando i massicci pirenaici centrali per arrivare ad Aínsa, uno dei borghi medievali più affascinanti di Spagna.
         </div>
-        <a href="https://www.google.com/maps/dir/Gouffre+de+Padirac,+Padirac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
-      </div>
-
-      <!-- Tappa 10 -->
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-step">Tappa 10</div>
-          <div class="timeline-title">Cahors ➔ Sarlat-la-Canéda ➔ La Roque-Gageac ➔ Les Eyzies</div>
-          <div class="timeline-meta">
-            <span>🇫🇷 Périgord Nero</span>
-            <span>· La culla della preistoria</span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          Il cuore del Périgord: tra i palazzi color miele di Sarlat, il villaggio incastrato nella roccia di La Roque-Gageac lungo la Dordogna, e la preistoria di Les Eyzies.
-        </div>
-        <a href="https://www.google.com/maps/dir/Cahors,+France/Sarlat-la-Canéda,+France/La+Roque-Gageac,+France/Les+Eyzies,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Jaca,+Spain/Aínsa,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 11 -->
+      <!-- Giorno 10 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 11</div>
-          <div class="timeline-title">Les Eyzies ➔ Brantôme en Périgord</div>
+          <div class="timeline-step">19 Agosto</div>
+          <div class="timeline-title">Aínsa ➔ Vielha</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Périgord Verde</span>
-            <span>· La Venezia del Périgord</span>
+            <span>🇪🇸 Val d'Aran</span>
+            <span>· 170 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Abbazia trogloditica lambita dalle acque pigre della Dronne. Un posto idilliaco per rinfrescarsi prima delle ultime tirate autostradali.
+          L'itinerario entra nell'alta quota della Val d'Aran superando passi alpini imponenti fino alla cittadina montana di Vielha.
         </div>
-        <a href="https://www.google.com/maps/dir/Les+Eyzies,+France/Brantôme+en+Périgord,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Aínsa,+Spain/Vielha,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 12 -->
+      <!-- Giorno 11 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 12</div>
-          <div class="timeline-title">Brantôme en Périgord ➔ Bordeaux</div>
+          <div class="timeline-step">20 Agosto</div>
+          <div class="timeline-title">Vielha ➔ Puigcerdà</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Nuova Aquitania</span>
-            <span>· Il punto di svolta</span>
+            <span>🇪🇸 Catalogna</span>
+            <span>· 200 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Metropoli elegante sul Garonne. Vino eccellente, cibo e il riflesso monumentale sul Miroir d'eau. Da qui si inverte la rotta per tornare verso est.
+          200 chilometri di curve continue ad alta quota attraversando i Pirenei catalani, facendo base nella vivace località di confine di Puigcerdà.
         </div>
-        <a href="https://www.google.com/maps/dir/Brantôme+en+Périgord,+France/Bordeaux,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Vielha,+Spain/Puigcerdà,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 13 -->
+      <!-- Giorno 12 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 13</div>
-          <div class="timeline-title">Bordeaux ➔ Gorges de l'Ardèche</div>
+          <div class="timeline-step">21 Agosto</div>
+          <div class="timeline-title">Puigcerdà ➔ Ripoll ➔ Barcellona</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Canyon d'Europa</span>
-            <span>· Il grande taglio verso Est</span>
+            <span>🇪🇸 Discesa al Mediterraneo</span>
+            <span>· 180 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          La mitica D290 corre alta sul bordo del canyon scavato dal fiume Ardèche. 30 chilometri di curve e belvedere indimenticabili.
+          Ultima sfilata montana passando dalla storica Ripoll per poi iniziare la discesa definitiva verso la costa mediterranea e l'arrivo a Barcellona.
         </div>
-        <a href="https://www.google.com/maps/dir/Bordeaux,+France/Gorges+de+l'Ardèche,+France" target="_blank" class="btn-maps">
+        <a href="https://www.google.com/maps/dir/Puigcerdà,+Spain/Ripoll,+Spain/Barcelona,+Spain" target="_blank" class="btn-maps">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Apri Percorso
         </a>
       </div>
 
-      <!-- Tappa 14 -->
+      <!-- Giorno 13 -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 14</div>
-          <div class="timeline-title">Gorges de l'Ardèche ➔ Mont Ventoux</div>
+          <div class="timeline-step">22 Agosto</div>
+          <div class="timeline-title">Barcellona (Sosta)</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Provenza</span>
-            <span>· Salita al Gigante</span>
+            <span>🇪🇸 Relax e Tapas</span>
+            <span>· 0 Km</span>
           </div>
         </div>
         <div class="timeline-content">
-          Il "Gigante della Provenza". Salita epica tra foreste e un paesaggio sommitale lunare e calcareo sferzato dal maestrale.
+          Giornata di meritato riposo per i piloti e le moto. Esplorazione di Barcellona, relax e ricarica prima del rientro in Italia.
         </div>
-        <a href="https://www.google.com/maps/dir/Gorges+de+l'Ardèche,+France/Mont+Ventoux,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
       </div>
 
-      <!-- Tappa 15 -->
+      <!-- Giorno 14 & Rientro -->
       <div class="timeline-item">
         <div class="timeline-header">
-          <div class="timeline-step">Tappa 15</div>
-          <div class="timeline-title">Mont Ventoux ➔ Gole del Verdon</div>
+          <div class="timeline-step">23 Agosto</div>
+          <div class="timeline-title">Barcellona ➔ Civitavecchia (Traghetto)</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Alpi dell'Alta Provenza</span>
-            <span>· Le falesie più alte d'Europa</span>
+            <span>🚢 Grimaldi Lines</span>
+            <span>· Imbarco Mattina / Arrivo Mezzanotte</span>
           </div>
         </div>
         <div class="timeline-content">
-          La Route des Crêtes e le falesie verticali a strapiombo sulle acque turchesi del fiume Verdon. Probabilmente la strada più spettacolare d'Europa da fare in sella.
+          Imbarco al mattino sul traghetto Grimaldi Lines con sistemazione in cabina a 4 posti esclusiva (Costo: 230€ per 2 moto e 2 persone). Navigazione e arrivo a Civitavecchia previsto intorno alla mezzanotte.
         </div>
-        <a href="https://www.google.com/maps/dir/Mont+Ventoux,+France/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
-      </div>
-
-      <!-- Tappa 16 -->
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-step">Tappa 16</div>
-          <div class="timeline-title">Gole del Verdon ➔ Gorges de Daluis ➔ Vicopisano</div>
-          <div class="timeline-meta">
-            <span>🇫🇷 ➔ 🇮🇹</span>
-            <span>· Il rientro in Italia</span>
-          </div>
-        </div>
-        <div class="timeline-content">
-          Il canyon di pelite rossa (Gorges de Daluis), roccia color sangue che contrasta con l'asfalto, prima di riprendere la via di casa verso la Toscana.
-        </div>
-        <a href="https://www.google.com/maps/dir/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France/Gorges+de+Daluis,+Guillaumes,+France/Vicopisano,+Pisa,+Italy" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>Raid in Moto Estate 2026 · Da Vicopisano a Bordeaux e ritorno · Curve, benzina e libertà.</p>
+    <p>Raid in Moto Estate 2026 · 2.921 chilometri di curve, passi e scoperte tra Francia e Spagna.</p>
   </footer>
 
 </body>
