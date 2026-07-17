@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raid in Moto 2026 · Alvernia & Périgord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #fcfbf9;
+      --text-color: #2b2927;
+      --accent-color: #d35400; /* Arancio terra bruciata per la moto */
+      --secondary-color: #2c3e50;
+      --border-color: #e6e3df;
+      --card-bg: #ffffff;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --font-serif: 'Playfair Display', serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(252, 251, 249, 0.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+      padding: 1rem 2rem;
+    }
+
+    nav .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    nav .logo {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul a {
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    nav ul a:hover {
+      opacity: 1;
+      color: var(--accent-color);
+    }
+
+    /* Header */
+    header {
+      max-width: 1100px;
+      margin: 4rem auto 2rem;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    header .tagline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-color);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    header .description {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      opacity: 0.85;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background-color: var(--border-color);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .stat-box {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-box span:first-child {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent-color);
+    }
+
+    .stat-box span:last-child {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.6;
+      margin-top: 0.25rem;
+    }
+
+    /* Itinerary Section */
+    .itinerary {
+      max-width: 800px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    /* Timeline structure style */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px solid var(--border-color);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 6px);
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      border: 2px solid var(--bg-color);
+      box-shadow: 0 0 0 4px var(--border-color);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .timeline-step {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    .timeline-title {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      width: 100%;
+    }
+
+    .timeline-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.85rem;
+      opacity: 0.6;
+      margin-top: 0.25rem;
+    }
+
+    .timeline-content {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .timeline-badge {
+      display: inline-block;
+      background: var(--border-color);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      nav ul {
+        display: none; /* Semplificazione per mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Raid Moto '26</a>
+      <ul>
+        <li><a href="#itinerario">Itinerario</a></li>
+        <li><a href="#info">Info Utili</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <p class="tagline">On the Road · Estate 2026</p>
+    <h1>Francia in Moto: <em>curve, canyon & borghi</em></h1>
+    <p class="description">Dalla Toscana ai vulcani dell'Alvernia, piegando tra le gole dell'Ardèche e del Verdon, fino alle ostriche di Bordeaux e i canyon del Périgord.</p>
+    
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span>~2.800</span>
+        <span>Chilometri</span>
+      </div>
+      <div class="stat-box">
+        <span>22</span>
+        <span>Tappe chiave</span>
+      </div>
+      <div class="stat-box">
+        <span>Pass</span>
+        <span>Parchi e colli</span>
+      </div>
+      <div class="stat-box">
+        <span>BMW GS</span>
+        <span>La cavalcatura</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Itinerary Section -->
+  <section class="itinerary" id="itinerario">
+    <h2 class="section-title">La Tabella di Marcia</h2>
+    
+    <div class="timeline">
+
+      <!-- Tappa 1 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Partenza</div>
+          <div class="timeline-title">Vicopisano (Toscana)</div>
+          <div class="timeline-meta">
+            <span>🇮🇹 Italia</span>
+            <span>· Start</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Si scaldano i motori sotto la rocca del Brunelleschi. Si punta a nord-ovest per varcare il confine francese ed entrare nel vivo del raid.
+        </div>
+      </div>
+
+      <!-- Tappa 2 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 2</div>
+          <div class="timeline-title">Saint-Michel d'Aiguilhe & Le Puy-en-Velay</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Alvernia</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Spettacolare cappella abbarbicata su un ago vulcanico basaltico. Un panorama mozzafiato che accoglie le moto nel cuore del Velay.
+        </div>
+      </div>
+
+      <!-- Tappa 3 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 3</div>
+          <div class="timeline-title">Gorges de Chouvigny</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Gole e Curve</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Sfilata di curve scavate nella roccia calcarea lungo il fiume Sioule. Un paradiso guidato, perfetto per iniziare a piegare seriamente.
+        </div>
+      </div>
+
+      <!-- Tappa 4 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 4</div>
+          <div class="timeline-title">Colle di Ceyssat & Alvernia (Puy de Dôme)</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· 1.078 m s.l.m.</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Salita guidata fino ai piedi del gigante addormentato della Catena dei Puys. Asfalto perfetto e panorama mozzafiato sui coni vulcanici.
+        </div>
+      </div>
+
+      <!-- Tappa 5 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 5</div>
+          <div class="timeline-title">Parco Naturale Regionale Livradois-Forez</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Foreste & Altopiani</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Misto stretto nel silenzio dei boschi di abeti dell'alto massiccio. Una terra selvaggia, isolata e intatta.
+        </div>
+      </div>
+
+      <!-- Tappa 6 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 6</div>
+          <div class="timeline-title">Lago di Vassivière</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Limosino</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Uno specchio d'acqua artificiale enorme sperduto sugli altopiani. Strade litoranee da guidare col gas costante e aria fresca.
+        </div>
+      </div>
+
+      <!-- Tappa 7 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 7</div>
+          <div class="timeline-title">Maurs & Figeac</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Cantal & Lot</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Ingresso ufficiale nel Sud-Ovest. Figeac accoglie le moto con la sua pietra arenaria scura e le strade medievali intatte.
+        </div>
+      </div>
+
+      <!-- Tappa 8 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 8</div>
+          <div class="timeline-title">Padirac (Gouffre)</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Abissi</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Sosta per scendere a 103 metri sotto terra in una delle cavità geologiche più incredibili d'Europa, navigando su un fiume sotterraneo.
+        </div>
+      </div>
+
+      <!-- Tappa 9 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 9</div>
+          <div class="timeline-title">Saint-Cirq-Lapopie & Cahors</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Valle del Lot</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Il borgo-gioiello arroccato sulla falesia a picco sul fiume Lot, seguito dalla maestosità medievale del ponte Valentré a Cahors.
+        </div>
+      </div>
+
+      <!-- Tappa 10 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 10</div>
+          <div class="timeline-title">Sarlat-la-Canéda, La Roque-Gageac & Les Eyzies</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Périgord Nero</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Il cuore del Périgord: tra i palazzi color miele di Sarlat, il villaggio incastrato nella roccia di La Roque-Gageac lungo la Dordogna, e la preistoria di Les Eyzies.
+        </div>
+      </div>
+
+      <!-- Tappa 11 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 11</div>
+          <div class="timeline-title">Brantôme en Périgord</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· La Venezia del Périgord</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Abbazia trogloditica lambita dalle acque pigre della Dronne. Un posto idilliaco per rinfrescarsi prima delle ultime tirate autostradali.
+        </div>
+      </div>
+
+      <!-- Tappa 12 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 12</div>
+          <div class="timeline-title">Bordeaux</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Il punto di svolta</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Metropoli elegante sul Garonne. Vino eccellente, cibo e il riflesso monumentale sul Miroir d'eau. Da qui si inverte la rotta per tornare verso est.
+        </div>
+      </div>
+
+      <!-- Tappa 13 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 13</div>
+          <div class="timeline-title">Gole dell'Ardèche</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Il Canyon d'Europa</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          La mitica D290 corre alta sul bordo del canyon scavato dal fiume Ardèche. 30 chilometri di curve e belvedere indimenticabili.
+        </div>
+      </div>
+
+      <!-- Tappa 14 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 14</div>
+          <div class="timeline-title">Mont Ventoux</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· 1.912 m s.l.m.</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Il "Gigante della Provenza". Salita epica tra foreste e un paesaggio sommitale lunare e calcareo sferzato dal maestrale.
+        </div>
+      </div>
+
+      <!-- Tappa 15 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 15</div>
+          <div class="timeline-title">Parco Naturale Regionale del Verdone</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Le Gorges du Verdon</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          La Route des Crêtes e le falesie verticali a strapiombo sulle acque turchesi del fiume Verdon. Probabilmente la strada più spettacolare d'Europa da fare in sella.
+        </div>
+      </div>
+
+      <!-- Tappa 16 -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div class="timeline-step">Tappa 16</div>
+          <div class="timeline-title">Gorges de Daluis</div>
+          <div class="timeline-meta">
+            <span>🇫🇷 Francia</span>
+            <span>· Il Colorado Nizzardo</span>
+          </div>
+        </div>
+        <div class="timeline-content">
+          Un canyon di pelite rossa, roccia color sangue che contrasta con l'asfalto grigio e il verde dei pini. Tunnel stretti a senso unico alternato scavati a mano.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Raid in Moto Estate 2026 · Da Vicopisano a Bordeaux e ritorno · Curve, benzina e libertà.</p>
+  </footer>
+
+</body>
+</html>
