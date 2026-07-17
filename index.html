@@ -212,20 +212,28 @@
       margin-bottom: 1.25rem;
     }
 
-    .btn-maps {
+    .actions-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background-color: var(--accent-color);
-      color: #ffffff;
       text-decoration: none;
       font-size: 0.85rem;
       font-weight: 600;
       padding: 0.6rem 1.2rem;
       border-radius: 30px;
-      box-shadow: 0 4px 6px rgba(211, 84, 0, 0.15);
       transition: all 0.2s ease;
-      border: 1px solid transparent;
+    }
+
+    .btn-maps {
+      background-color: var(--accent-color);
+      color: #ffffff;
+      box-shadow: 0 4px 6px rgba(211, 84, 0, 0.15);
     }
 
     .btn-maps:hover {
@@ -234,7 +242,19 @@
       box-shadow: 0 6px 12px rgba(211, 84, 0, 0.25);
     }
 
-    .btn-maps svg {
+    .btn-weather {
+      background-color: transparent;
+      color: var(--secondary-color);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-weather:hover {
+      background-color: #f0ede9;
+      color: var(--text-color);
+      transform: translateY(-2px);
+    }
+
+    .btn-action svg {
       fill: currentColor;
       width: 16px;
       height: 16px;
@@ -312,10 +332,16 @@
         <div class="timeline-content">
           Partenza ufficiale da Vicopisano. Tappa di trasferimento lungo la costa per raggiungere la Francia e fare base ad Antibes per la prima notte.
         </div>
-        <a href="https://www.google.com/maps/dir/Vicopisano,+Pisa,+Italy/Antibes,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://maps.app.goo.gl/QLxsmqE3G6s5RTg9A" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/antibes/francia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Antibes
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 2 -->
@@ -331,10 +357,16 @@
         <div class="timeline-content">
           Giornata spettacolare tra le curve di Comps-sur-Artuby e Aiguines nel cuore del Verdon, seguita dalla scalata del mitico Mont Ventoux con discesa e pernottamento a Malaucène.
         </div>
-        <a href="https://www.google.com/maps/dir/Antibes,+France/Comps-sur-Artuby,+France/Aiguines,+France/Mont+Ventoux,+France/Malaucène,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Antibes,+France/Comps-sur-Artuby,+France/Aiguines,+France/Mont+Ventoux,+France/Malaucène,+France" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/malauc%C3%A8ne/francia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Malaucène
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 3 -->
@@ -350,10 +382,16 @@
         <div class="timeline-content">
           Si cavalcano le falesie e i canyon dell'Ardèche per poi piegare verso il Massiccio Centrale dell'Alvernia, fermando le moto a Saint-Flour.
         </div>
-        <a href="https://www.google.com/maps/dir/Malaucène,+France/Gorges+de+l'Ardèche,+France/Saint-Flour,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Malaucène,+France/Gorges+de+l'Ardèche,+France/Saint-Flour,+France" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/saint-flour/francia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Saint-Flour
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 4 -->
@@ -369,10 +407,16 @@
         <div class="timeline-content">
           Tappa ricca di tappe intermedie e borghi mozzafiato: Maurs, Figeac, lo splendido nido d'aquila di Saint-Cirq-Lapopie, Cahors e la falesia di La Roque-Gageac, fino alla "Venezia del Périgord", Brantôme.
         </div>
-        <a href="https://www.google.com/maps/dir/Saint-Flour,+France/Maurs,+France/Figeac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France/La+Roque-Gageac,+France/Brantôme,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Saint-Flour,+France/Maurs,+France/Figeac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France/La+Roque-Gageac,+France/Brantôme,+France" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/brant%C3%B4me/francia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Brantôme
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 5 -->
@@ -388,10 +432,16 @@
         <div class="timeline-content">
           Discesa verso l'Oceano Atlantico passando per la splendida Bordeaux, puntando i fari direttamente sulla penisola di Cap Ferret per la notte di fronte al bacino d'Arcachon.
         </div>
-        <a href="https://www.google.com/maps/dir/Brantôme,+France/Bordeaux,+France/Cap+Ferret,+Lège-Cap-Ferret,+France" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Brantôme,+France/Bordeaux,+France/Cap+Ferret,+Lège-Cap-Ferret,+France" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/l%C3%A8ge-cap-ferret/francia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Cap Ferret
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 6 -->
@@ -407,10 +457,16 @@
         <div class="timeline-content">
           Si scende verso sud costeggiando le grandi pinete delle Landes per superare il confine spagnolo ed entrare nei Paesi Baschi. Notte a San Sebastián (Donostia).
         </div>
-        <a href="https://www.google.com/maps/dir/Cap+Ferret,+Lège-Cap-Ferret,+France/San+Sebastián,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Cap+Ferret,+Lège-Cap-Ferret,+France/San+Sebastián,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/san-sebasti%C3%A1n/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo San Sebastián
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 7 -->
@@ -426,10 +482,16 @@
         <div class="timeline-content">
           Inizia l'avvicinamento e la scalata ai Pirenei. Tappa breve ma guidata attraverso le valli basche fino alle storiche mura di Pamplona.
         </div>
-        <a href="https://www.google.com/maps/dir/San+Sebastián,+Spain/Pamplona,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/San+Sebastián,+Spain/Pamplona,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/pamplona/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Pamplona
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 8 -->
@@ -445,10 +507,16 @@
         <div class="timeline-content">
           Inserimento nel cuore dell'Aragona. Strade perfette, panorami montani aspri e selvaggi che portano alla cittadella fortificata di Jaca.
         </div>
-        <a href="https://www.google.com/maps/dir/Pamplona,+Spain/Jaca,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Pamplona,+Spain/Jaca,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/jaca/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Jaca
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 9 -->
@@ -464,10 +532,16 @@
         <div class="timeline-content">
           Pieghe memorabili costeggiando i massicci pirenaici centrali per arrivare ad Aínsa, uno dei borghi medievali più affascinanti di Spagna.
         </div>
-        <a href="https://www.google.com/maps/dir/Jaca,+Spain/Aínsa,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Jaca,+Spain/Aínsa,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/a%C3%ADnsa/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Aínsa
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 10 -->
@@ -483,10 +557,16 @@
         <div class="timeline-content">
           L'itinerario entra nell'alta quota della Val d'Aran superando passi alpini imponenti fino alla cittadina montana di Vielha.
         </div>
-        <a href="https://www.google.com/maps/dir/Aínsa,+Spain/Vielha,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Aínsa,+Spain/Vielha,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/vielha/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Vielha
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 11 -->
@@ -502,10 +582,16 @@
         <div class="timeline-content">
           200 chilometri di curve continue ad alta quota attraversando i Pirenei catalani, facendo base nella vivace località di confine di Puigcerdà.
         </div>
-        <a href="https://www.google.com/maps/dir/Vielha,+Spain/Puigcerdà,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Vielha,+Spain/Puigcerdà,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/puigcerd%C3%A0/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Puigcerdà
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 12 -->
@@ -521,10 +607,16 @@
         <div class="timeline-content">
           Ultima sfilata montana passando dalla storica Ripoll per poi iniziare la discesa definitiva verso la costa mediterranea e l'arrivo a Barcellona.
         </div>
-        <a href="https://www.google.com/maps/dir/Puigcerdà,+Spain/Ripoll,+Spain/Barcelona,+Spain" target="_blank" class="btn-maps">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Apri Percorso
-        </a>
+        <div class="actions-group">
+          <a href="https://www.google.com/maps/dir/Puigcerdà,+Spain/Ripoll,+Spain/Barcelona,+Spain" target="_blank" class="btn-action btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Apri Percorso
+          </a>
+          <a href="https://www.3bmeteo.com/meteo/barcellona/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Barcellona
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 13 -->
@@ -540,6 +632,12 @@
         <div class="timeline-content">
           Giornata di meritato riposo per i piloti e le moto. Esplorazione di Barcellona, relax e ricarica prima del rientro in Italia.
         </div>
+        <div class="actions-group">
+          <a href="https://www.3bmeteo.com/meteo/barcellona/spagna" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Barcellona
+          </a>
+        </div>
       </div>
 
       <!-- Giorno 14 & Rientro -->
@@ -554,6 +652,12 @@
         </div>
         <div class="timeline-content">
           Imbarco al mattino sul traghetto Grimaldi Lines con sistemazione in cabina a 4 posti esclusiva (Costo: 230€ per 2 moto e 2 persone). Navigazione e arrivo a Civitavecchia previsto intorno alla mezzanotte.
+        </div>
+        <div class="actions-group">
+          <a href="https://www.3bmeteo.com/meteo/civitavecchia" target="_blank" class="btn-action btn-weather">
+            <svg viewBox="0 0 24 24"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15 0 9.88 2.73 2.73 7.15 2.73 9.88 0 2.41-2.41 2.68-6.11 0.81-8.81L12 14l-5.95-5.95zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L12 16l5.79-5.79c.13.58.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93z"/></svg>
+            Meteo Civitavecchia
+          </a>
         </div>
       </div>
 
