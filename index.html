@@ -224,21 +224,34 @@
       font-size: 0.85rem;
       opacity: 0.6;
       margin-top: 0.25rem;
+      align-items: center;
     }
 
     .timeline-content {
       font-size: 0.95rem;
       opacity: 0.85;
+      margin-bottom: 0.75rem;
     }
 
-    .timeline-badge {
-      display: inline-block;
-      background: var(--border-color);
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
+    /* Maps Link Button Styling */
+    .maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--accent-color);
+      text-decoration: none;
       font-weight: 600;
-      margin-top: 0.5rem;
+      border: 1px solid var(--accent-color);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      background: transparent;
+    }
+
+    .maps-link:hover {
+      background: var(--accent-color);
+      color: #ffffff;
     }
 
     /* Footer */
@@ -259,7 +272,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
       nav ul {
-        display: none; /* Semplificazione per mobile */
+        display: none;
       }
     }
   </style>
@@ -272,7 +285,6 @@
       <a href="#" class="logo">Raid Moto '26</a>
       <ul>
         <li><a href="#itinerario">Itinerario</a></li>
-        <li><a href="#info">Info Utili</a></li>
       </ul>
     </div>
   </nav>
@@ -313,240 +325,256 @@
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Partenza</div>
-          <div class="timeline-title">Vicopisano (Toscana)</div>
+          <div class="timeline-title">Vicopisano ➔ Le Puy-en-Velay</div>
           <div class="timeline-meta">
-            <span>🇮🇹 Italia</span>
-            <span>· Start</span>
+            <span>🇮🇹 ➔ 🇫🇷</span>
+            <span>· Tappa di trasferimento</span>
           </div>
         </div>
         <div class="timeline-content">
-          Si scaldano i motori sotto la rocca del Brunelleschi. Si punta a nord-ovest per varcare il confine francese ed entrare nel vivo del raid.
+          Si scaldano i motori sotto la rocca del Brunelleschi a Vicopisano. Ci si dirige verso il confine francese e il massiccio centrale, direzione Le Puy-en-Velay.
         </div>
+        <a href="https://www.google.com/maps/dir/Vicopisano,+Pisa,+Italy/Le+Puy-en-Velay,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 2 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 2</div>
-          <div class="timeline-title">Saint-Michel d'Aiguilhe & Le Puy-en-Velay</div>
+          <div class="timeline-title">Le Puy-en-Velay ➔ Saint-Michel d'Aiguilhe</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Alvernia</span>
+            <span>🇫🇷 Alvernia</span>
+            <span>· Breve trasferimento urbano</span>
           </div>
         </div>
         <div class="timeline-content">
-          Spettacolare cappella abbarbicata su un ago vulcanico basaltico. Un panorama mozzafiato che accoglie le moto nel cuore del Velay.
+          La spettacolare cappella abbarbicata su un ago vulcanico basaltico proprio nel centro della conca del Velay.
         </div>
+        <a href="https://www.google.com/maps/dir/Le+Puy-en-Velay,+France/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 3 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 3</div>
-          <div class="timeline-title">Gorges de Chouvigny</div>
+          <div class="timeline-title">Saint-Michel d'Aiguilhe ➔ Gorges de Chouvigny</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Gole e Curve</span>
+            <span>🇫🇷 Gole e Curve</span>
+            <span>· Verso il fiume Sioule</span>
           </div>
         </div>
         <div class="timeline-content">
           Sfilata di curve scavate nella roccia calcarea lungo il fiume Sioule. Un paradiso guidato, perfetto per iniziare a piegare seriamente.
         </div>
+        <a href="https://www.google.com/maps/dir/Rocher+Saint-Michel+d'Aiguilhe,+Aiguilhe,+France/Gorges+de+Chouvigny,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 4 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 4</div>
-          <div class="timeline-title">Colle di Ceyssat & Alvernia (Puy de Dôme)</div>
+          <div class="timeline-title">Gorges de Chouvigny ➔ Colle di Ceyssat (Alvernia)</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· 1.078 m s.l.m.</span>
+            <span>🇫🇷 1.078 m s.l.m.</span>
+            <span>· Verso il Puy de Dôme</span>
           </div>
         </div>
         <div class="timeline-content">
           Salita guidata fino ai piedi del gigante addormentato della Catena dei Puys. Asfalto perfetto e panorama mozzafiato sui coni vulcanici.
         </div>
+        <a href="https://www.google.com/maps/dir/Gorges+de+Chouvigny,+France/Col+de+Ceyssat,+Ceyssat,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 5 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 5</div>
-          <div class="timeline-title">Parco Naturale Regionale Livradois-Forez</div>
+          <div class="timeline-title">Colle di Ceyssat ➔ P.N.R. Livradois-Forez</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Foreste & Altopiani</span>
+            <span>🇫🇷 Foreste & Altopiani</span>
+            <span>· Misto guidato</span>
           </div>
         </div>
         <div class="timeline-content">
           Misto stretto nel silenzio dei boschi di abeti dell'alto massiccio. Una terra selvaggia, isolata e intatta.
         </div>
+        <a href="https://www.google.com/maps/dir/Col+de+Ceyssat,+Ceyssat,+France/Parc+naturel+régional+Livradois-Forez,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 6 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 6</div>
-          <div class="timeline-title">Lago di Vassivière</div>
+          <div class="timeline-title">P.N.R. Livradois-Forez ➔ Lago di Vassivière</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Limosino</span>
+            <span>🇫🇷 Limosino</span>
+            <span>· Strade litoranee</span>
           </div>
         </div>
         <div class="timeline-content">
           Uno specchio d'acqua artificiale enorme sperduto sugli altopiani. Strade litoranee da guidare col gas costante e aria fresca.
         </div>
+        <a href="https://www.google.com/maps/dir/Parc+naturel+régional+Livradois-Forez,+France/Lac+de+Vassivière,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 7 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 7</div>
-          <div class="timeline-title">Maurs & Figeac</div>
+          <div class="timeline-title">Lago di Vassivière ➔ Maurs ➔ Figeac</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Cantal & Lot</span>
+            <span>🇫🇷 Cantal & Lot</span>
+            <span>· Ingresso nel Sud-Ovest</span>
           </div>
         </div>
         <div class="timeline-content">
           Ingresso ufficiale nel Sud-Ovest. Figeac accoglie le moto con la sua pietra arenaria scura e le strade medievali intatte.
         </div>
+        <a href="https://www.google.com/maps/dir/Lac+de+Vassivière,+France/Maurs,+France/Figeac,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 8 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 8</div>
-          <div class="timeline-title">Padirac (Gouffre)</div>
+          <div class="timeline-title">Figeac ➔ Gouffre de Padirac</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
+            <span>🇫🇷 Lot</span>
             <span>· Abissi</span>
           </div>
         </div>
         <div class="timeline-content">
           Sosta per scendere a 103 metri sotto terra in una delle cavità geologiche più incredibili d'Europa, navigando su un fiume sotterraneo.
         </div>
+        <a href="https://www.google.com/maps/dir/Figeac,+France/Gouffre+de+Padirac,+Padirac,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 9 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 9</div>
-          <div class="timeline-title">Saint-Cirq-Lapopie & Cahors</div>
+          <div class="timeline-title">Padirac ➔ Saint-Cirq-Lapopie ➔ Cahors</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Valle del Lot</span>
+            <span>🇫🇷 Valle del Lot</span>
+            <span>· I borghi delle falesie</span>
           </div>
         </div>
         <div class="timeline-content">
           Il borgo-gioiello arroccato sulla falesia a picco sul fiume Lot, seguito dalla maestosità medievale del ponte Valentré a Cahors.
         </div>
+        <a href="https://www.google.com/maps/dir/Gouffre+de+Padirac,+Padirac,+France/Saint-Cirq-Lapopie,+France/Cahors,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 10 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 10</div>
-          <div class="timeline-title">Sarlat-la-Canéda, La Roque-Gageac & Les Eyzies</div>
+          <div class="timeline-title">Cahors ➔ Sarlat-la-Canéda ➔ La Roque-Gageac ➔ Les Eyzies</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Périgord Nero</span>
+            <span>🇫🇷 Périgord Nero</span>
+            <span>· La culla della preistoria</span>
           </div>
         </div>
         <div class="timeline-content">
           Il cuore del Périgord: tra i palazzi color miele di Sarlat, il villaggio incastrato nella roccia di La Roque-Gageac lungo la Dordogna, e la preistoria di Les Eyzies.
         </div>
+        <a href="https://www.google.com/maps/dir/Cahors,+France/Sarlat-la-Canéda,+France/La+Roque-Gageac,+France/Les+Eyzies,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 11 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 11</div>
-          <div class="timeline-title">Brantôme en Périgord</div>
+          <div class="timeline-title">Les Eyzies ➔ Brantôme en Périgord</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
+            <span>🇫🇷 Périgord Verde</span>
             <span>· La Venezia del Périgord</span>
           </div>
         </div>
         <div class="timeline-content">
           Abbazia trogloditica lambita dalle acque pigre della Dronne. Un posto idilliaco per rinfrescarsi prima delle ultime tirate autostradali.
         </div>
+        <a href="https://www.google.com/maps/dir/Les+Eyzies,+France/Brantôme+en+Périgord,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 12 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 12</div>
-          <div class="timeline-title">Bordeaux</div>
+          <div class="timeline-title">Brantôme en Périgord ➔ Bordeaux</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
+            <span>🇫🇷 Nuova Aquitania</span>
             <span>· Il punto di svolta</span>
           </div>
         </div>
         <div class="timeline-content">
           Metropoli elegante sul Garonne. Vino eccellente, cibo e il riflesso monumentale sul Miroir d'eau. Da qui si inverte la rotta per tornare verso est.
         </div>
+        <a href="https://www.google.com/maps/dir/Brantôme+en+Périgord,+France/Bordeaux,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 13 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 13</div>
-          <div class="timeline-title">Gole dell'Ardèche</div>
+          <div class="timeline-title">Bordeaux ➔ Gorges de l'Ardèche</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Il Canyon d'Europa</span>
+            <span>🇫🇷 Canyon d'Europa</span>
+            <span>· Il grande taglio verso Est</span>
           </div>
         </div>
         <div class="timeline-content">
           La mitica D290 corre alta sul bordo del canyon scavato dal fiume Ardèche. 30 chilometri di curve e belvedere indimenticabili.
         </div>
+        <a href="https://www.google.com/maps/dir/Bordeaux,+France/Gorges+de+l'Ardèche,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 14 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 14</div>
-          <div class="timeline-title">Mont Ventoux</div>
+          <div class="timeline-title">Gorges de l'Ardèche ➔ Mont Ventoux</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· 1.912 m s.l.m.</span>
+            <span>🇫🇷 Provenza</span>
+            <span>· Salita al Gigante</span>
           </div>
         </div>
         <div class="timeline-content">
           Il "Gigante della Provenza". Salita epica tra foreste e un paesaggio sommitale lunare e calcareo sferzato dal maestrale.
         </div>
+        <a href="https://www.google.com/maps/dir/Gorges+de+l'Ardèche,+France/Mont+Ventoux,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 15 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 15</div>
-          <div class="timeline-title">Parco Naturale Regionale del Verdone</div>
+          <div class="timeline-title">Mont Ventoux ➔ Gole del Verdon</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Le Gorges du Verdon</span>
+            <span>🇫🇷 Alpi dell'Alta Provenza</span>
+            <span>· Le falesie più alte d'Europa</span>
           </div>
         </div>
         <div class="timeline-content">
           La Route des Crêtes e le falesie verticali a strapiombo sulle acque turchesi del fiume Verdon. Probabilmente la strada più spettacolare d'Europa da fare in sella.
         </div>
+        <a href="https://www.google.com/maps/dir/Mont+Ventoux,+France/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
       <!-- Tappa 16 -->
       <div class="timeline-item">
         <div class="timeline-header">
           <div class="timeline-step">Tappa 16</div>
-          <div class="timeline-title">Gorges de Daluis</div>
+          <div class="timeline-title">Gole del Verdon ➔ Gorges de Daluis ➔ Vicopisano</div>
           <div class="timeline-meta">
-            <span>🇫🇷 Francia</span>
-            <span>· Il Colorado Nizzardo</span>
+            <span>🇫🇷 ➔ 🇮🇹</span>
+            <span>· Il rientro in Italia</span>
           </div>
         </div>
         <div class="timeline-content">
-          Un canyon di pelite rossa, roccia color sangue che contrasta con l'asfalto grigio e il verde dei pini. Tunnel stretti a senso unico alternato scavati a mano.
+          Il canyon di pelite rossa (Gorges de Daluis), roccia color sangue che contrasta con l'asfalto, prima di riprendere la via di casa verso la Toscana.
         </div>
+        <a href="https://www.google.com/maps/dir/Gorges+du+Verdon,+La+Palud-sur-Verdon,+France/Gorges+de+Daluis,+Guillaumes,+France/Vicopisano,+Pisa,+Italy" target="_blank" class="maps-link">🗺️ Visualizza Percorso</a>
       </div>
 
     </div>
